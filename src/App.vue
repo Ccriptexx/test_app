@@ -1,32 +1,68 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <div class="container">
+      <div class="navbar">
+        <div class="menuItems">
+          <img src="../src/assets/logo.svg" alt="logo" class="logo">
+        </div>
+
+        <div class="menuItems">
+          <a href="#" class="telefon pcScreen">+7 (499) 705 78 93</a>
+          <a href="#">
+            <img src="../src/assets/Telephone.svg" alt="telefonLogo" class="telefonLogo phoneScreen">
+          </a>
+        </div>
+
+        <div class="menuItems">
+          <a href="#" class="questions pcScreen">Вопросы и ответы</a>
+          <a href="#">
+            <img src="../src/assets/Message.svg" alt="questions" class="questionsLogo phoneScreen">
+          </a>
+        </div>
+
+        <div class="menuItems phoneScreen">
+          <a href="#">
+            <img src="../src/assets/menu.svg" alt="menu" class="menuLogo phoneScreen">
+          </a>
+        </div>
+
+        <div class="menuItems lustCH">
+          <div class="login"><a href="#">Вход</a></div>
+          <div class="register"><a href="#">Регистрация</a></div>
+        </div>
+
+      </div>
+
+      <PhoneLogin v-if="getOpenLoginPhone"/>
+
+      <MailLogin v-if="getOpenLoginMail"/>
+
+      <div class="aboutUs">
+        <img class="aboutUsLogo" src="@/assets/aboutUs.jpg" />
+      </div>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import MailLogin from './views/MailLogin.vue';
+import PhoneLogin from './views/PhoneLogin.vue';
+import { mapGetters } from 'vuex'
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  props: ['value'],
+  computed: {
+    ...mapGetters([
+      'getOpenLoginPhone',
+      'getOpenLoginMail',
+    ]),
+  },
+  components: {
+    MailLogin, PhoneLogin
   }
 }
+</script>
+
+<style>
+@import '../public/index.css';
 </style>

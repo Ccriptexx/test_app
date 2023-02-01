@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F5F5F5;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+}
+
+.navbar { 
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 81px;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding-left: 250px;
+  border-radius: 0px;
+  white-space: nowrap;
+  margin-bottom: 42px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 
+              0px 4px 5px rgba(0, 0, 0, 0.14), 
+              0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.phoneScreen {
+  display: none;
+}
+
+.logRegister {
+  white-space: nowrap;
+}
+
+.logo {
+  max-width: 178.5px;
+  height: 36px;
+}
+
+.telefon {
+  max-width: 118px;
+  height: 16px; 
+}
+
+.questions {
+  max-width: 165px;
+  height: 16px;
+}
+
+.login {
+  display: inline;
+  border-right: 2px solid black;
+  padding-right: 8px;
+  margin-right: 6px;
+  width: 36px;
+  height: 16px;
+}
+
+.register {
+  display: inline;
+  width: 97px;
+  height: 16px;
+}
+
+.line {
+  width: 16px;
+  height: 0px;
+}
+
+.telefonLogo {
+  display: none;
+}
+
+.navbar a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.65px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.navbar a:hover {
+  opacity: .60;
+}
+
+.header {
+  margin-left: 250px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.formPhone {
+  margin-left: 250px;
+  max-width: 960px;
+  padding: 28px 36px;
+  background: #FFFFFF;
+  border: 2px solid #ECEFF1;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+.infoEboutLogin {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  margin-bottom: 24px;
+}
+
+.formLoginPhone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputPhone {
+  border: 0;
+  width: 100%;
+  max-width: 532px;
+  height: 56px;
+  background: #F5F6F7;
+  border-radius: 20px;
+  padding: 16px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.submitPhone {
+  border: 0;
+  width: 300px;
+  height: 56px;
+  background: #8071F3;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.regulationsLogin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 532px;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.checkBox {
+  width: 30px;
+  height:30px;
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.regulationsInfo {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.38);
+  margin-right: 10px;
+}
+
+.emailLogin {
+  width: 312px;
+  height: 56px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.aboutUs {
+  padding: 38px 56px;
+  margin-bottom: 100px;
+  background: white;
+  width: 960px;
+  height: 505px;
+  margin-left: 250px;
+  background: #FFFFFF;
+  border: 2px solid #ECEFF1;
+  border-radius: 20px;
+}
+
+.aboutUsLogo {
+  width: 826;
+  height: 433px;
+}
+
+.aboutUsLink {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    margin: 0 auto;
+  }
+
+  .aboutUs {
+    margin: 0 auto;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px, auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding-left: 10px;
+    border-radius: 0px;
+    white-space: nowrap;
+    margin-bottom: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 
+                0px 4px 5px rgba(0, 0, 0, 0.14), 
+                0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .header {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .formPhone {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 28px 36px;
+    background: #FFFFFF;
+    border: 2px solid #ECEFF1;
+    border-radius: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .pcScreen {
+    display: none;
+  }
+
+  .phoneScreen {
+    display: flex;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    grid-gap: 0;
+    margin: 0 auto;
+    padding: 18px 16px;
+    width: 360px;
+    height: 108px;
+    border-radius: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 
+                0px 4px 5px rgba(0, 0, 0, 0.14), 
+                0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .menuItems {
+    align-self: center;
+  }
+
+  .logo {
+    margin-right: 88px;
+    width: 119px;
+    height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .telefonLogo {
+    margin-right: 24px;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 18px;
+  }
+
+  .questionsLogo {
+    margin-right: 24px;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .menuLogo {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .lustCH {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .login {
+    border-right: none;
+    width: 180px;
+    height: 48px;
+    padding: 13px 15px;
+    text-align: center;
+  }
+  
+  .register {
+    padding: 13px 15px;
+    width: 180px;
+    height: 48px;
+    text-align: center;
+  }
+
+  .register:hover, .login:hover {
+    border-bottom: 2px solid black;
+  }
+
+  .formPhone {
+    margin-left: 0;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 360px;
+    background: #FFFFFF;
+    border-radius: 0;
+    margin-bottom: 32px;
+  }
+
+  .regulationsInfo {
+    display: block;
+    order: 2;
+    width: 278px;
+    height: 73px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    color: rgba(0, 0, 0, 0.38);
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+  }
+
+  .infoEboutLogin {
+    display: block;
+    width: 299px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+    margin-bottom: 24px;
+  }
+
+  .inputPhone {
+    border: 0;
+    width: 312px;
+    height: 56px;
+    background: #F5F6F7;
+    border-radius: 20px;
+    padding: 16px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .emailLogin {
+    order: 1;
+    width: 312px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .formLoginPhone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pLogin {
+    order: 2;
+  }
+
+  .aboutUs {
+    display: none;
+  }
+
+  .aboutUsLink {
+    margin: 52px 75px;
+    justify-self: center;
+    order: 3;
+    display: flex;
+    width: 155px;
+    height: 20px;
+  }
+
+  .aboutUsLogo {
+    width: 155px;
+    height: 20px;
+  }
+
+  .aboutUsLogoPhone {
+    background: white;
+    margin: 0 auto;
+    width: 328px;
+    height: 1126px;
+  }
+
+  .aboutUsLogoPhone {
+    margin: 0 auto;
+  }
+
+  .open {
+    display: contents;
+  }
+
+  .aboutUsPhone {
+    order: 2;
+    margin-top: 60px;
+  }
+}
